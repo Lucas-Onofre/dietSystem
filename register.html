@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="login-card">
+            <div class="content">
+                <header>
+                    <img class="apple-logo" src="./assets/img/apple-logo.svg" alt="Apple Logo">
+                </header>
+                <div class="signup-buttons">
+                    <button class="button" type="button">Cadastra-se</button>
+                    <button class="grey-button" type="button" onclick="location.href='./index.html'">Já tenho
+                        cadastro</button>
+                </div>
+                <form class="main-form" action="#">
+                    <input type="text" class="" name="name" id="name" placeholder="Seu nome">
+                    <input type="tel" name="cellphone" id="cellphone" placeholder="Seu número de celular">
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                    <input type="password" class="password-inputs" name="password" id="new-password"
+                        placeholder="Digite uma senha forte">
+                    <input type="password" class="password-inputs" name="password" id="new-password-2"
+                        placeholder="Digite a senha novamente">
+                    <button class="toggles toggle-password-2" data-togglePass="true" type="button"
+                        onclick="togglePass()"></button>
+                    <button class="toggles toggle-password-3" data-togglePass="true" type="button"
+                        onclick="togglePass()"></button>
+                    <div class="checkbox-politics">
+                        <input type="checkbox" id="politics" name="politcs" value="politcs">
+                        <label for="politcs">Declaro que li e concordo com os <strong>termos de uso</strong> e a
+                            <strong>política de privacidade</strong></label>
+                    </div>
+                    <button class="login-button load-button" type="submit"
+                        onclick="location.href='./index.html'">Finalizar
+                        Cadastro</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

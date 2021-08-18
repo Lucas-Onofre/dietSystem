@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="login-card">
+            <div class="content">
+                <header>
+                    <img class="apple-logo" src="./assets/img/apple-logo.svg" alt="Apple Logo">
+                </header>
+                <div class="signup-buttons">
+                    <button class="grey-button" type="button"
+                        onclick="location.href='./register.html'">Cadastra-se</button>
+                    <button type="button">Já tenho cadastro</button>
+                </div>
+                <form class="main-form" action="#">
+                    <input type="email" name="email" id="email" placeholder="admin@dietsystem.com" required>
+                    <input class="password-inputs" type="password" name="password" id="password"
+                        placeholder="Digite a sua senha" required>
+                    <button class="toggles toggle-password" data-togglePass="true" type="button"
+                        onclick="togglePass()"></button>
+                    <p class="password-backup"><a href="forgot-password.html">Esqueci minha senha</a></p>
+                    <button class="login-button load-button" type="submit">Entrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

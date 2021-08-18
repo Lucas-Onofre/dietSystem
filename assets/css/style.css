@@ -1,0 +1,471 @@
+:root {
+    --background: #E5E5E5;
+    --white: #FFFFFF;
+    --grey: #E5E5E5;
+    --green: #4AD395;
+    --text-title: #777777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--background);
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialised;
+}
+
+body, input, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+strong {
+    color: var(--green);
+}
+
+a {
+    text-decoration: none;
+    color: var(--green);
+    transition: filter 0.2s;
+}
+
+a:hover {
+    filter: brightness(0.9);
+}
+
+button {
+    cursor: pointer;
+    background: var(--green);
+    border: 0.1rem solid var(--green);
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    padding: 1.6rem;
+    border-radius: 0.5rem;
+    transition: filter 0.2s;
+}
+
+button:hover {
+    filter: brightness(0.9)
+}
+
+.apple-logo {
+    width: 16rem;
+    margin-bottom: 2.5rem;
+}
+
+.grey-button {
+    background: var(--grey);
+    color: var(--text-title);
+    border: var(--text-title);
+}
+
+.login-card {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    background: var(--white);
+    width: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 5rem;
+}
+
+.login-card div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+}
+
+.content {
+    margin: auto;
+    width: 60%;
+}
+
+main {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+div .signup-buttons {
+    display: flex;
+    margin-top: 1.3rem;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+div .signup-buttons button {
+    width: 50%;
+}
+
+.main-form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 2rem;
+    margin-top: 1rem;
+}
+
+.main-form p {
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+.main-form input {
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.65);
+    border: 0.1rem solid var(--grey);
+    font-size: 1.4rem;
+    box-sizing: border-box;
+}
+
+.main-form input:focus {
+    outline: 0;
+    border: 0.1rem solid var(--green);
+}
+
+.toggle-password, .toggle-password-2, .toggle-password-3, .toggle-password-4, .toggle-password-5 {
+    background: url('/assets/img/olho.svg') no-repeat;
+    border: none;
+    position: absolute;
+    transform: translate(-15%, -50%);
+    width: 10px;
+}
+
+.toggle-password {
+    top: 45%;
+    left: 90%;
+}
+
+.toggle-password-2 {
+    top: 51%;
+    left: 90%;
+}
+
+.toggle-password-3 {
+    top: 65%;
+    left: 90%;
+}
+
+.toggle-password-4 {
+    top: 25%;
+    left: 86%;
+}
+
+.toggle-password-5 {
+    top: 50%;
+    left: 86%;
+}
+
+.main-form .recovery-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.main-form .recovery-buttons button {
+    width: 100%;
+}
+
+.toggle-password img {
+    display: flex;
+    margin-top: -1.2rem;
+    margin-left: -0.9rem;
+    justify-content: center;
+    -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.toggle-password-2 img {
+    display: flex;
+    margin-top: -1.2rem;
+    margin-left: -0.9rem;
+    justify-content: center;
+    -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.toggle-password-3 img {
+    display: flex;
+    margin-top: -1.2rem;
+    margin-left: -0.9rem;
+    justify-content: center;
+    -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.toggle-password-4 img {
+    display: flex;
+    margin-top: -1.2rem;
+    margin-left: -0.9rem;
+    justify-content: center;
+    -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.toggle-password-5 img {
+    display: flex;
+    margin-top: -1.2rem;
+    margin-left: -0.9rem;
+    justify-content: center;
+    -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.login-button {
+    margin: auto;
+    width: 70%;
+}
+
+.rotating-load {
+    -webkit-animation: rotate-center 1s linear 2 both;
+    animation: rotate-center 1s linear 2 both;
+}
+
+.checkbox-politics {
+    display: grid !important;
+    grid-template-columns: 1fr 11fr;
+    font-size: 0.9rem;
+}
+
+.checkbox-politics input {
+    all: unset;
+    border: 1px solid var(--text-title);
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+.checkbox-politics input:checked {
+    background-color: var(--green);
+}
+
+.checkbox-politics p {
+    color: var(--text-title);
+}
+
+.subtitle {
+    text-align: left;
+    color: var(--text-title);
+    font-size: 1.4rem;
+    margin-left: 26px;
+}
+
+.change-pass {
+    margin: auto;
+    width: 70%;
+}
+
+.new-pass-input {
+    gap: 1rem;
+}
+
+/* animações */
+
+/* togglePassword :) */
+
+@-webkit-keyframes slide-in-fwd-center {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-fwd-center {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+/* loadingButton */
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* forgot-password-page */
+
+.description {
+    color: var(--text-title);
+    text-align: center;
+    gap: 2rem;
+}
+
+.description h1, p {
+    font-size: 1.7rem;
+}
+
+/* Input configs */
+
+#name {
+    background: url('/assets/img/perfil.svg') no-repeat scroll 1rem 1.8rem;
+    padding-left: 40px;
+    background-size: 1.6rem;
+}
+
+#cellphone {
+    background: url('/assets/img/celular.svg') no-repeat scroll 1rem 1.4rem;
+    padding-left: 40px;
+    background-size: 1.6rem;
+}
+
+#email {
+    background: url('/assets/img/email.svg') no-repeat scroll 1rem 1.8rem;
+    padding-left: 40px;
+    background-size: 1.6rem;
+}
+
+#password, #new-password, #new-password-2 {
+    background: url('/assets/img/cadeado.svg') no-repeat scroll 1rem 1.5rem;
+    padding-left: 40px;
+    background-size: 1.6rem;
+}
+
+/* mediaqueries */
+
+@media(max-width: 1180px) {
+    html {
+        font-size: 60%;
+    }
+    .content {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1080px) {
+    html {
+        font-size: 55%;
+    }
+    .login-card {
+        width: 90%;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 720px) {
+    p a {
+        font-size: 1rem;
+    }
+    .toggle-password, .toggle-password-2, .toggle-password-3, .toggle-password-4, .toggle-password-5 {
+        left: 80%;
+    }
+}
+
+@media (max-width: 435px) {
+    .toggle-password-2 {
+        top: 47%;
+    }
+    .toggle-password-3 {
+        top: 60%;
+    }
+    .toggle-password-4 {
+        left: 75%;
+    }
+    .toggle-password-5 {
+        left: 75%;
+    }
+}
+
+@media (max-width: 400px) {
+    div .signup-buttons button {
+        font-size: 100%;
+    }
+    .toggle-password-4 {
+        top: 23%;
+        left: 72%;
+    }
+    .toggle-password-5 {
+        top: 47%;
+        left: 72%;
+    }
+}
+
+@media (max-width: 320px) {
+    .toggle-password, .toggle-password-2, .toggle-password-3, .toggle-password-4, .toggle-password-5 {
+        left: 75%;
+    }
+    .toggle-password-2 {
+        top: 45%;
+    }
+    .toggle-password-3 {
+        top: 58%;
+    }
+    .toggle-password-4 {
+        left: 65%;
+    }
+    .toggle-password-5 {
+        left: 65%;
+    }
+}
+
+@media (max-width: 280px) {
+    div .signup-buttons {
+        flex-direction: column;
+        width: 220px;
+    }
+    .toggle-password {
+        left: 68%;
+        top: 42%;
+    }
+    .toggle-password-2 {
+        left: 68%;
+        top: 42%;
+    }
+    .toggle-password-3 {
+        left: 68%;
+        top: 54%;
+    }
+}
